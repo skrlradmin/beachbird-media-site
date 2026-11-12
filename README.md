@@ -2,14 +2,15 @@
 
 Static one-page site for [Beachbird Media](https://beachbirdmedia.com) (domain not connected in this draft). Content studio by **Nick** and **P**. Channel: [@TheWaterBoyz710](https://www.youtube.com/@TheWaterBoyz710). Production partnership: **skrlr** / **skrlr GenLab**.
 
-## Provisional brand (not final)
+## Design: "Ink & Voltage"
 
-| Element | Draft choice |
-| -------- | ------------- |
-| Wordmark | Text only: “Beachbird Media” (Playfair Display + teal accent) |
-| Palette | Deep navy `#070d14`, sand `#e4d9c8`, teal `#3a9a9c`, coral `#c97a62` |
+AI-first video and animation studio, open for third-party contract work. The look borrows from TheWaterBoyz710 (googly-eyes mark, funk-yellow and alien-green, a western slab for Hash Cowboy) inside a dark AI-studio frame: glowing aurora background, film grain, glass cards with a cursor spotlight, a filmstrip of real work in the hero, and scroll reveals. All static HTML/CSS/JS, so it deploys to GitHub Pages as-is.
 
-Finalize logo, typography, and colors before launch.
+| Element | Choice |
+| -------- | ------- |
+| Mark | Googly eyes (pupils follow the pointer) + "BeachbirdMedia" wordmark |
+| Type | Bricolage Grotesque (display/body), JetBrains Mono (labels), Rye (Hash Cowboy title only) |
+| Palette | Ink `#08070b`, paper `#f3eedf`, yellow `#ffd60a`, green `#7bff3c`, purple `#8b4dff`, orange `#ff6a1f` |
 
 ## Local preview
 
@@ -43,7 +44,7 @@ Merging to `main` still requires enabling GitHub Pages in repo settings (source:
 ## Open decisions
 
 - **Brand colors & logo** — using provisional coastal/cinematic palette and text wordmark only
-- **Final package prices** — tiers on site are marked draft / PLACEHOLDER ($200 / $750 / $1,800 reference ladder)
+- **Pricing** — starting prices on site: $500 minimum (product images, short clips), $1,000 for 1 minute, $2,000 for 3 minutes (longest listed); cartoons and longer work are quote-only
 - **Contact email & booking flow** — `hello@example.com` and disabled form are placeholders
 - **Hosting & DNS** — static-hosting ready (e.g. GitHub Pages later); no deploy or DNS for beachbirdmedia.com in this repo yet
 
@@ -64,5 +65,4 @@ Embeds use `youtube-nocookie.com` and load when the user activates the thumbnail
 
 - Wordmark labeled provisional
 - Domain “not yet connected” in hero meta
-- Draft pricing badge and per-tier PLACEHOLDER notes
 - Contact: `hello@example.com`, disabled form, disabled submit button
