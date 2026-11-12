@@ -1,6 +1,6 @@
-# Beachbird Media — marketing site (v1 draft)
+# Beachbird Media — marketing site
 
-Static one-page site for [Beachbird Media](https://beachbirdmedia.com) (domain not connected in this draft). Content studio by **Nick** and **P**. Channel: [@TheWaterBoyz710](https://www.youtube.com/@TheWaterBoyz710). Production partnership: **skrlr** / **skrlr GenLab**.
+Static one-page site for [Beachbird Media](https://beachbirdmedia.com). Content studio by **Nick** and **P**. Channel: [@TheWaterBoyz710](https://www.youtube.com/@TheWaterBoyz710). Beachbird Media is a **Skrlr** company and produces with **Skrlr GenLab**.
 
 ## Design: "Ink & Voltage"
 
@@ -44,9 +44,9 @@ Merging to `main` still requires enabling GitHub Pages in repo settings (source:
 ## Open decisions
 
 - **Brand colors & logo** — using provisional coastal/cinematic palette and text wordmark only
-- **Pricing** — starting prices on site: $500 minimum (product images, short clips), $1,000 for 1 minute, $2,000 for 3 minutes (longest listed); cartoons and longer work are quote-only
-- **Contact email & booking flow** — `hello@example.com` and disabled form are placeholders
-- **Hosting & DNS** — static-hosting ready (e.g. GitHub Pages later); no deploy or DNS for beachbirdmedia.com in this repo yet
+- **Pricing** — starting prices on site: $500 minimum (product images, short clips), $1,000 for 1 minute, $2,000 for 3 minutes; no length limit, and cartoons and longer work are quote-only
+- **Contact** — `media@skrlr.com`; the form composes an email in the visitor's mail app (GitHub Pages has no backend). Swap in a form service if you want submissions without a mail app
+- **Hosting** — GitHub Pages, deployed from `main` to beachbirdmedia.com
 
 ## Embedded YouTube videos
 
@@ -60,9 +60,3 @@ Verified via channel RSS (`channel_id=UCDK_DBrGCONi_wBHSz5QO2w`):
 | Trick Or Treat | `CfAxrGxDlk4` |
 
 Embeds use `youtube-nocookie.com` and load when the user activates the thumbnail (lazy).
-
-## Placeholders on the site
-
-- Wordmark labeled provisional
-- Domain “not yet connected” in hero meta
-- Contact: `hello@example.com`, disabled form, disabled submit button
