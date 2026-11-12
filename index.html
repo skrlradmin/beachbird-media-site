@@ -111,7 +111,7 @@
             <ul class="chips">
               <li>Music videos</li>
               <li>Ad spots</li>
-              <li>Up to 3 minutes</li>
+              <li>Any length</li>
             </ul>
           </article>
           <article class="card card--yellow spot reveal">
@@ -274,12 +274,12 @@
       </section>
 
       <section class="section" id="partner" aria-labelledby="partner-heading">
-        <h2 id="partner-heading" class="visually-hidden">Production partner</h2>
+        <h2 id="partner-heading" class="visually-hidden">A Skrlr company</h2>
         <div class="partner-block reveal">
-          <p class="kicker">[ production partner ]</p>
+          <p class="kicker">[ a skrlr company ]</p>
           <p>
-            <strong>Powered by skrlr GenLab.</strong> Beachbird produces with skrlr GenLab for generative
-            pipelines, finishing, and delivery at scale.
+            <strong>Beachbird Media is a Skrlr company.</strong> We produce with Skrlr GenLab for
+            generative pipelines, finishing, and delivery at scale.
           </p>
         </div>
       </section>
@@ -315,11 +315,11 @@
             </ul>
           </article>
           <article class="price-card featured reveal">
-            <h3>3-minute music video</h3>
+            <h3>3-minute video</h3>
             <p class="price"><span>about</span> $2,000</p>
-            <p class="price-note">Our full-length package</p>
+            <p class="price-note">Ultra-real AI video</p>
             <ul>
-              <li>Up to 3 minutes, cut to your track</li>
+              <li>Short films and music videos</li>
               <li>Delivered in 1080p</li>
               <li>Two rounds of revisions</li>
             </ul>
@@ -327,8 +327,8 @@
         </div>
         <div class="pricing-cta reveal">
           <p>
-            <strong>Cartoons, series, or something longer?</strong> Contact us to discuss pricing. Tell us
-            what you have in mind and we'll quote it.
+            <strong>Cartoons, series, or a longer video?</strong> Contact us to discuss pricing. There's no
+            length limit. Tell us what you have in mind and we'll quote it.
           </p>
           <a class="btn btn-primary" href="#contact">Contact us</a>
         </div>
@@ -347,25 +347,35 @@
           <h2 id="contact-heading">Got an idea? Let's <span class="grad">make it.</span></h2>
           <p>
             Tell us about your project. Email
-            <a href="mailto:hello@example.com">hello@example.com</a>
-            <span class="tag">Placeholder</span>
+            <a href="mailto:media@skrlr.com">media@skrlr.com</a>
           </p>
         </div>
-        <form class="contact-form reveal" action="#" method="post" aria-describedby="form-note">
-          <p id="form-note" class="form-note">This form isn't wired up yet.</p>
+        <form
+          class="contact-form reveal"
+          action="mailto:media@skrlr.com"
+          method="post"
+          enctype="text/plain"
+          aria-describedby="form-note"
+        >
           <label>
             Name
-            <input type="text" name="name" autocomplete="name" disabled />
+            <input type="text" name="name" autocomplete="name" required />
           </label>
           <label>
             Email
-            <input type="email" name="email" autocomplete="email" disabled />
+            <input type="email" name="email" autocomplete="email" placeholder="you@company.com" required />
           </label>
           <label>
             Project summary
-            <textarea name="message" rows="4" disabled></textarea>
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="A 3-minute music video for our next single"
+              required
+            ></textarea>
           </label>
-          <button type="button" class="btn btn-primary" disabled>Send (placeholder)</button>
+          <button type="submit" class="btn btn-primary">Send email</button>
+          <p id="form-note" class="form-note">Sending opens your email app with the message ready to go.</p>
         </form>
       </section>
     </main>
@@ -373,7 +383,7 @@
     <footer class="site-footer">
       <p class="site-footer__mark" aria-hidden="true">Beachbird</p>
       <div class="site-footer__row">
-        <p>© <span id="year"></span> Beachbird Media · Nick and P</p>
+        <p>© <span id="year"></span> Beachbird Media · A Skrlr company · Nick and P</p>
         <p>
           <a href="https://www.youtube.com/@TheWaterBoyz710" rel="noopener noreferrer">YouTube — @TheWaterBoyz710</a>
         </p>

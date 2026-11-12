@@ -109,6 +109,24 @@
     reveals.forEach((el) => io.observe(el));
   }
 
+  // Contact form: GitHub Pages has no backend, so compose an email instead.
+  const form = document.querySelector(".contact-form");
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const name = String(data.get("name") || "").trim();
+      const email = String(data.get("email") || "").trim();
+      const message = String(data.get("message") || "").trim();
+      const subject = `Project inquiry from ${name}`;
+      const body = `${message}
+
+Name: ${name}
+Email: ${email}`;
+      window.location.href = `mailto:media@skrlr.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  }
+
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 })();

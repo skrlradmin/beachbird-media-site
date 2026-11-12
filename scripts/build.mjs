@@ -40,7 +40,7 @@ const checks = [
   ["contact", /id="contact"/],
   ["youtube-embed-facade", /data-video-id=/],
   ["pricing-contact-note", /Contact us to discuss pricing/i],
-  ["placeholder-contact", /PLACEHOLDER/i],
+  ["contact-email", /mailto:media@skrlr\.com/],
 ];
 
 for (const [name, pattern] of checks) {
