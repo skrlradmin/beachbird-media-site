@@ -45,7 +45,7 @@ Merging to `main` still requires enabling GitHub Pages in repo settings (source:
 
 - **Brand colors & logo** — using provisional coastal/cinematic palette and text wordmark only
 - **Pricing** — starting prices on site: $500 minimum (product images, short clips), $1,000 for 1 minute, $2,000 for 3 minutes; no length limit, and cartoons and longer work are quote-only
-- **Contact** — `media@skrlr.com`; the form composes an email in the visitor's mail app (GitHub Pages has no backend). Swap in a form service if you want submissions without a mail app
+- **Contact** — `Media@skrlr.com` as an email button; the contact form was removed for now (GitHub Pages has no backend, so a form needs a form service or a mail-app handoff)
 - **Hosting** — GitHub Pages, deployed from `main` to beachbirdmedia.com
 
 ## Embedded YouTube videos
