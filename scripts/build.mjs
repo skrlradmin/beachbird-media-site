@@ -22,6 +22,14 @@ cpSync(join(root, "index.html"), join(dist, "index.html"));
 cpSync(join(root, "css"), join(dist, "css"), { recursive: true });
 cpSync(join(root, "js"), join(dist, "js"), { recursive: true });
 
+const publicDir = join(root, "public");
+if (statSync(publicDir).isDirectory()) {
+  cpSync(publicDir, dist, {
+    recursive: true,
+    filter: (src) => !src.endsWith(".DS_Store"),
+  });
+}
+
 const html = readFileSync(join(dist, "index.html"), "utf8");
 const checks = [
   ["hero", /id="hero"/],

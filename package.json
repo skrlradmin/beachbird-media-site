@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "description": "Beachbird Media marketing site (v1 draft)",
+  "engines": {
+    "node": ">=20 <21"
+  },
   "scripts": {
     "build": "node scripts/build.mjs",
     "preview": "npx --yes serve dist -l 4173"

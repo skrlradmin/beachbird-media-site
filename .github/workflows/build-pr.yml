@@ -1,0 +1,35 @@
+name: Build PR
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Verify Pages assets
+        run: |
+          test -f dist/index.html
+          test -f dist/css/styles.css
+          test -f dist/js/main.js
+          test -f dist/CNAME
+          test "$(tr -d '\n' < dist/CNAME)" = "beachbirdmedia.com"
+          test -f dist/.nojekyll

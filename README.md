@@ -29,7 +29,16 @@ npx --yes serve . -l 4173
 
 ## Build
 
-`npm run build` copies `index.html`, `css/`, and `js/` into `dist/` and runs basic content checks.
+`npm run build` copies `index.html`, `css/`, and `js/` into `dist/`, includes `public/CNAME` (`beachbirdmedia.com`) and `public/.nojekyll`, and runs basic content checks.
+
+**Node:** use **20.x** (see `engines` in `package.json`).
+
+## CI / GitHub Pages (workflows only)
+
+- **`.github/workflows/build-pr.yml`** — runs `npm run build` on pull requests.
+- **`.github/workflows/deploy-pages.yml`** — on push to `main` (or manual dispatch): build and deploy `dist/` via official Pages actions.
+
+Merging to `main` still requires enabling GitHub Pages in repo settings (source: GitHub Actions); this repo does not change those settings in this PR.
 
 ## Open decisions
 
