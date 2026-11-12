@@ -39,7 +39,7 @@ const checks = [
   ["pricing", /id="pricing"/],
   ["contact", /id="contact"/],
   ["youtube-embed-facade", /data-video-id=/],
-  ["draft-pricing", /Draft pricing/i],
+  ["pricing-contact-note", /Contact us to discuss pricing/i],
   ["placeholder-contact", /PLACEHOLDER/i],
 ];
 
